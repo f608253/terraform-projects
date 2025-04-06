@@ -15,6 +15,15 @@ resource "google_compute_subnetwork" "sub-singapore" {
   region = "asia-southeast1"
 }
 
+resource "google_compute_firewall" "allow-icmp" {
+  name = "allow-icmp"
+  network = google_compute_network.customvpc.id
+  allow {
+    protocol = "icmp"
+  }
+  source_ranges = ["10.0.0.9/32"]
+}
+
 output "auto" {
   value = google_compute_network.autovpc.id
 }
