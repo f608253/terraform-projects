@@ -1,3 +1,5 @@
+#Variables with local var declaration as well
+
 variable "environment" {
   description = "Environment name"
   type        = string

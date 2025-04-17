@@ -1,3 +1,5 @@
+#How we can define map variable and use in main TF configuration file 
+
 resource "local_file" "devops" {
   filename = "devops-test.txt"
   content = var.content_map["content1"]

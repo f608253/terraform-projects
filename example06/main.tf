@@ -1,3 +1,5 @@
+#How variable as type list can be used in TF
+
 resource "local_file" "devops" {
   filename = var.file_list[0]
   content = var.content_map["content1"]

@@ -5,8 +5,8 @@ variable "filename" {
 variable "content_map" {
   type = map
   default = {
-    "content1" = "this is a cool content1"
-    "content2" = "this is a cooler content2"
+    "content1" = "This is coming from map and content1"
+    "content2" = "This is coming from map and content2"
   }
 }
 

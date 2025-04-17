@@ -15,6 +15,6 @@ variable "devops_op_trainer" {
 }
 
 variable "file_list" {
-  type = list
+ # type = map
   default = ["first.txt","second.txt"]
 }

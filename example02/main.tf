@@ -1,3 +1,6 @@
+#This is an example on how have variable and tf config in one file
+
+
 variable "file_name" {
   description = "Name of the file to be created"
   type        = string
