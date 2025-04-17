@@ -7,3 +7,7 @@ resource "local_file" "devops-var" {
   filename = var.filename
   content = var.content
 }
+
+output "devops_op_trainer" {
+  value = var.devops_op_trainer
+}
